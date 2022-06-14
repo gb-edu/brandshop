@@ -1,0 +1,154 @@
+// page cart
+.sp-cart {
+  padding-top: 90px;
+}
+.sp-cart__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-bottom: 1px solid $border-color;
+  text-align: right;
+}
+
+.sp-cart__heading {
+  flex-basis: 150px;
+}
+
+.sp-cart__heading--prod {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.sp-cart__heading--action {
+  flex-basis: 120px;
+}
+
+.sp-cart__product {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+  padding: 22px 0 25px;
+  border-bottom: 1px solid $border-color;
+}
+
+.sp-cart__item {
+  flex-basis: 152px;
+  color: #595959;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.sp-cart__item--first {
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+}
+
+.sp-cart__product-info {
+  padding-left: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  text-transform: initial;
+}
+
+.sp-cart__product-title {
+  color: $base-font-color;
+  text-transform: uppercase;
+}
+
+.sp-cart__product-color {
+  margin-top: 28px;
+}
+
+.sp-cart__item--action {
+  flex-basis: 136px;
+  text-align: right;
+  padding-right: 18px;
+}
+
+.sp-cart__product-color {
+  margin-bottom: 4px;
+}
+
+.sp-cart__product-gray {
+  color: #6b6a6a;
+  font-weight: 300;
+  padding-left: 6px;
+}
+
+.xmark--sp-cart {
+  color: #c0c0c0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sp-cart__btn-block {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button--sp-cart {
+  min-width: 240px;
+}
+
+.sp-cart__forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sp-cart__form {
+  flex-basis: 31.333%;
+}
+
+.sp-cart__form-inner {
+  text-align: right;
+  background-color: #f5f3f3;
+  padding: 38px;
+}
+
+.sp-cart__forms {
+  margin-top: 55px;  
+}
+
+.form-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-heading--form {
+  padding-top: 10px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid $border-color;
+}
+
+.form-text {
+  margin-bottom: 20px;
+}
+
+.form-subtotal {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.form-subtotal__num {
+  padding-left: 15px;
+}
+
+.input--sp-cart {
+  margin-bottom: 20px;
+}
+
+.button--sp-form {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+// end shopping cart page

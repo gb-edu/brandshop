@@ -7,10 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/64c7ece4e2.js" crossorigin="anonymous"></script>
-  <title>Single page</title>
+  <title>Product</title>
 </head>
 <body>
   <header>
@@ -18,28 +17,81 @@
       <div class="container">
         <div class="header__inner">
           <div class="brand">
-            <a href="#" class="brand__logo-link"><img src="img/logo.png" alt="logo" class="brand__logo-img"></a>
-            <div class="brand-title">Bran<span class="text-red">d</span></div>
+            <a class="brand__logo" href="index.html">
+              <img class="brand__logo-img" src="img/logo.png" alt="logo">
+              <span class="brand__logo-title">Bran<span class="brand__logo-span">d</span></span></a>
           </div>
           <div class="search">
             <button class="search__btn-browse">Browse</button>
+            <div class="dropdown__nav__menu browse__menu">
+              <div class="mega__item">
+                <h3 class="mega__heading">Women</h3>
+                <a href="#" class="mega__link">Dresses</a>
+                <a href="#" class="mega__link">Tops</a>
+                <a href="#" class="mega__link">Sweaters/Knits</a>
+                <a href="#" class="mega__link">Jackets/Coats</a>
+                <a href="#" class="mega__link">Blazers</a>
+                <a href="#" class="mega__link">Denim</a>
+                <a href="#" class="mega__link">Leggings/Pants</a>
+                <a href="#" class="mega__link">Skirts/Shorts</a>
+                <a href="#" class="mega__link">Accessories</a>
+              </div>
+              <div class="mega__item">
+                <h3 class="mega__heading">Men</h3>
+                <a href="#" class="mega__link">Dresses</a>
+                <a href="#" class="mega__link">Tops</a>
+                <a href="#" class="mega__link">Sweaters/Knits</a>
+                <a href="#" class="mega__link">Jackets/Coats</a>
+                <a href="#" class="mega__link">Blazers</a>
+                <a href="#" class="mega__link">Denim</a>
+                <a href="#" class="mega__link">Leggings/Pants</a>
+                <a href="#" class="mega__link">Skirts/Shorts</a>
+                <a href="#" class="mega__link">Accessories</a>
+              </div>
+            </div>
             <input class="search__input" type="text" placeholder="Search for Item...">
             <button class="search__btn-find">F</button>
           </div>
           <div class="account">
             <button class="account__btn-cart">C</button>
             <button class="account__btn btn">My Account</button>
+            <div class="cart__menu dropdown__nav__menu">
+              <div class="cart__menu__item">
+                <div><img class="cart__menu__img" src="img/cart_menu-img1.jpg" alt="image"></div>
+                <div class="cart__menu__info">
+                  <p class="cart__info__title">Reboxzane</p>
+                  <p><img src="img/stars.png" alt="img"></p>
+                  <p class="cart__info__text">1 x $250</p>
+                </div>
+                <i class="fa-solid fa-circle-xmark hover__xmark"></i>
+              </div>
+              <div class="cart__menu__item">
+                <div><img class="cart__menu__img" src="img/cart_menu-img2.jpg" alt="image"></div>
+                <div class="cart__menu__info">
+                  <p class="cart__info__title">Reboxzane</p>
+                  <p><img src="img/stars.png" alt="img"></p>
+                  <p class="cart__info__text">1 x $250</p>
+                </div>
+                <i class="fa-solid fa-circle-xmark hover__xmark"></i>
+              </div>
+              <div class="cart__menu__total">
+                <div class="cart__menu__price">
+                  <p>Total</p><p>$500.00</p>
+                </div>
+                <a class="default__btn cart__menu__btn" href="checkout.html">Checkout</a>
+                <a class="default__btn cart__menu__btn" href="cart.html">Go to cart</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="container">
       <nav class="nav">
         <ul class="nav__menu">
           <li class="nav__menu-list"><a class="nav__menu-link" href="#">Home</a></li>
           <li class="nav__menu-list"><a class="nav__menu-link" href="#">Man</a>
-            <div class="mega__box">
+            <div class="dropdown__nav__menu mega__box">
               <div class="mega__item">
                 <h3 class="mega__heading">Women</h3>
                 <a href="#" class="mega__link">Dresses</a>
@@ -76,7 +128,7 @@
             </div>
           </li>
           <li class="nav__menu-list"><a class="nav__menu-link" href="#">Women</a>
-            <div class="mega__box">
+            <div class="mega__box dropdown__nav__menu">
               <div class="mega__item">
                 <h3 class="mega__heading">Women</h3>
                 <a href="#" class="mega__link">Dresses</a>
@@ -113,7 +165,7 @@
             </div>
           </li>
           <li class="nav__menu-list"><a class="nav__menu-link" href="#">Kids</a>
-            <div class="mega__box">
+            <div class="mega__box dropdown__nav__menu">
               <div class="mega__item">
                 <h3 class="mega__heading">Kids</h3>
                 <a href="#" class="mega__link">Dresses</a>
@@ -137,7 +189,7 @@
           </li>
           <li class="nav__menu-list"><a class="nav__menu-link" href="#">Accoseriese</a></li>
           <li class="nav__menu-list last"><a class="nav__menu-link" href="#">Featured</a>
-            <div class="mega__box">
+            <div class="mega__box dropdown__nav__menu">
               <div class="mega__item">
                 <h3 class="mega__heading">Women</h3>
                 <a href="#" class="mega__link">Dresses</a>
@@ -157,7 +209,7 @@
             </div>
           </li>
           <li class="nav__menu-list last"><a class="nav__menu-link" href="#">Hot Deals</a>
-            <div class="mega__box">
+            <div class="mega__box dropdown__nav__menu">
               <div class="mega__item">
                 <h3 class="mega__heading">Women</h3>
                 <a href="#" class="mega__link">Dresses</a>
@@ -182,15 +234,13 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
-    
     <div class="prod__category">
       <div class="container">
         <div class="prod__category__inner">
           <h3 class="category__title text-red">New arrivals</h3>
           <nav class="breadcrumbs">
-          <a class="breadcrumbs__link" href="#">Home</a> / <a class="breadcrumbs__link" href="#">Man</a> / <a class="breadcrumbs__link active" href="#">New arrivals</a>
+          <a class="breadcrumbs__link" href="index.html">Home</a> / <a class="breadcrumbs__link active" href="product.html">Product</a></a>
           </nav>
         </div>
       </div>
@@ -204,7 +254,6 @@
         <i class="fa-solid fa-angle-right"></i>
       </div>
     </div>
-
     <div class="container">
       <div class="prod__info">
         <div class="prod__info__inner">
@@ -259,12 +308,10 @@
         </div>
       </div>
     </div>
-
     <section class="suggest">
       <div class="container">
         <h3 class="suggest__title">You may also like</h3>
         <div class="card__list">
-
           <div class="card__list-item">
             <a class="item__link" href="#">
               <img class="item__img" src="img/single_page/product-01.jpg" alt="image">
@@ -280,7 +327,6 @@
               </a>
             </div>
           </div>
-    
           <div class="card__list-item">
             <a class="item__link" href="#">
               <img class="item__img" src="img/single_page/product-02.jpg" alt="image">
@@ -296,7 +342,6 @@
               </a>
             </div>
           </div>
-    
           <div class="card__list-item">
             <a class="item__link" href="#">
               <img class="item__img" src="img/single_page/product-03.jpg" alt="image">
@@ -312,7 +357,6 @@
               </a>
             </div>
           </div>
-
           <div class="card__list-item">
             <a class="item__link" href="#">
               <img class="item__img" src="img/single_page/product-04.jpg" alt="image">
@@ -332,7 +376,6 @@
       </div>
     </section>
   </main>
-
   <section class="subscribe subscribe-single__page">
     <div class="subscribe__left">
       <div class="subscribe__slider">
@@ -347,7 +390,6 @@
               <div class="caption__text">Dhaka, Bd</div>
             </figcaption>
           </figure>
-          
           <div class="slide__selector">
             <div class="slide__selector-item"></div>
             <div class="slide__selector-item active"></div>
@@ -356,7 +398,6 @@
         </div>
       </div>
     </div>
-    
     <div class="subscribe__right">
       <div class="subscribe__block">
         <div class="subscribe__block-title" >Subscribe</div>
@@ -368,15 +409,14 @@
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
         <div class="footer__top-left">
-          
           <div class="brand">
-            <a href="#" class="brand__logo-link"><img src="img/logo.png" alt="logo" class="brand__logo-img"></a>
-            <div class="brand-title">Bran<span class="text-red">d</span></div>
+            <a class="brand__logo" href="index.html">
+              <img class="brand__logo-img" src="img/logo.png" alt="logo">
+              <span class="brand__logo-title">Bran<span class="brand__logo-span">d</span></span></a>
           </div>
           <div class="footer__text">
             Objectively transition extensive data rather than cross functional solutions.
@@ -388,7 +428,6 @@
             Distinctively seize superior initiatives for wireless technologies.
             Dynamically optimize.
           </div>
-        
         </div>
         <nav class="footer__top-right">
           <div class="nav__block">
@@ -401,7 +440,6 @@
               <li><a class="footer__nav-link" href="#">Contact</a></li>
             </ul>
           </div>
-
           <div class="nav__block">
             <h3 class="nav__block-header text-red">Information</h3>
             <ul class="nav__block-list">
@@ -412,7 +450,6 @@
               <li><a class="footer__nav-link" href="#">Promotion</a></li>
             </ul>
           </div>
-
           <div class="nav__block">
             <h3 class="nav__block-header text-red">Shop category</h3>
             <ul class="nav__block-list">
@@ -423,11 +460,9 @@
               <li><a class="footer__nav-link" href="#">Bowse All</a></li>
             </ul>
           </nav>
-
         </div>
       </div>
     </div>
-
     <div class="footer__bottom">
       <div class="container">
         <div class="footer__bottom__inner">
@@ -443,5 +478,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
