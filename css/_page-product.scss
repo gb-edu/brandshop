@@ -1,15 +1,15 @@
-.prod__category {
+.prod-category {
   background-color: #f8f3f4;
   border-bottom: 1px solid $border-color;
 }
-.prod__category__inner {
+.prod__category-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 150px;
 }
 
-.category__title {
+.prod__category-title {
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
@@ -64,12 +64,10 @@
 }
 
 .prod__info {
-  position: relative;
   border: 1px solid $border-color;
   background-color: #fff;
-  margin-top: -85px;
   padding-bottom: 120px;
-  z-index: 1000;
+  transform: translateY(-85px);
 }
 
 .prod__info__inner {
@@ -193,7 +191,7 @@
 
 /* section suggest */
 .suggest {
-  margin-top: 115px;
+  margin-top: 38px;
 }
 
 .suggest__title {

@@ -1,0 +1,197 @@
+// page catalog
+
+.feature-wrapper {
+  background-color: #222224;
+}
+
+.feature-list--catalog {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  text-align: center;
+}
+
+.feature-list__item--catalog {
+  position: static;
+  padding-left: 20px;
+}
+
+.feature-list__img--catalog {
+  position: static;
+  margin-bottom: 10px;
+}
+
+.subscribe--catalog {
+  margin-top: 0;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.catalog-filter-aside {
+  flex-basis: 21.5%;
+}
+
+.catalog-content {
+  flex-basis: 75%
+}
+
+.filter-heading {
+  display: block;
+  position: relative;
+  color: #6f6e6e;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .1s linear;
+  padding: 9px 4px 9px 10px;
+  margin-bottom: 8px;
+  border-left: 5px solid $color-pink;
+  border-bottom: 1px solid $border-color;
+}
+
+.filter-heading:hover {
+  color: $color-pink;
+}
+
+.filter-heading::-webkit-details-marker {
+  display: none;
+}
+
+.filter-heading::after {
+  position: absolute;
+  right: 6px;
+  font-family: "Font Awesome 5 Free"; 
+  content: '\f0d7';
+  font-size: 16px;
+}
+
+.filter-details[open] .filter-heading{
+  color: $color-pink;
+}
+
+.filter-details[open] .filter-heading::after{
+  content: '\f0d8';
+}
+
+.filter__list-item {
+  display: block;
+  color: $gray-font-color;
+  line-height: 35px;
+  padding-left: 16px;
+  transition: color .1s linear;
+}
+
+.filter__list-item:hover {
+  color: $color-pink;
+}
+
+
+
+
+
+
+.content-filter-top {
+  display: flex;
+}
+
+.filter-top__item {
+  flex: 32%;
+  color: $gray-font-color;
+}
+
+.filter-top__item-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.filter-top__item-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__list-item--top {
+  line-height: 14px;
+  padding: 0 12px 0 0;
+  margin: 8px 8px 6px 0;
+  border-right: 2px solid $border-color;
+}
+
+.filter__list-item--top:last-child {
+  border-right: none;
+}
+
+.filter-checkbox {
+  min-width: 48.7px;
+  padding-top: 6px;
+  margin-right: 16px;
+}
+
+.filter-checkbox-label {
+  color: $gray-font-color;
+}
+
+//price filter
+
+.price-filter__values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-filter__range {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  height: 6px;
+  background-color: $color-pink;
+  border-radius: 4px;
+}
+
+
+
+
+
+//price filter
+
+.content-filter-bottom {
+  display: flex;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.filter-bottom__span {
+  padding: 6px 10px;
+  border: 1px solid $border-color;
+  background-color: #fff;
+  color: $gray-font-color;
+  font-size: 14px;
+}
+
+.filter-bottom__select {
+  border: 1px solid $border-color;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 8px;
+  color: $gray-font-color;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.pagination__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.button--pagination {
+  width: 160px;
+}

@@ -360,8 +360,13 @@ a {
   color: $base-font-color;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 20px;
+  padding: 20px 20px 17px;
   transition: color .1s linear;
+  border-bottom: 3px solid transparent;
+}
+
+.nav__menu-link.nav__menu-link--active {
+  border-bottom: 3px solid $color-pink;
 }
 
 /* mega-menu */
@@ -469,6 +474,12 @@ a {
 
 .content__item {
   position: relative;
+  color: $base-font-color;
+  transition: filter .1s linear;
+}
+
+.content__item:hover {
+  filter: brightness(50%);
 }
 
 .content__item-badge {
@@ -515,27 +526,24 @@ a {
   color: #9f9f9f;
 }
 
-.card__list {
+.card-list__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.card__list {
   margin-top: 60px;
 }
 
-.card__list-item {
+.card-list__item {
   width: 263px;
   position: relative;
   margin-bottom: 30px;
 }
 
-.card__list-item:hover .add__box {
+.card-list__item:hover .add__box {
   display: flex;
 }
 
-.card__list-item:hover .item__img {
+.card-list__item:hover .item__img {
   filter: brightness(30%);
 }
 
@@ -623,7 +631,6 @@ a {
 .feature__block {
   display: flex;
   justify-content: space-between;
-  background-color: #222224;
   color: #fff;
 }
 
@@ -642,13 +649,15 @@ a {
   z-index: 1;
 }
 
-.feature__list {
-  max-width: 370px;
+.feature-list {
+  color: #fff;
   padding-top: 40px;
   padding-bottom: 20px;
+  background-color: #222224;
+  max-width: 370px;
 }
 
-.feature__list-item {
+.feature-list__item {
   position: relative;
   padding-left: 110px;
   padding-right: 20px;
@@ -656,19 +665,19 @@ a {
   margin-bottom: 36px;
 }
 
-.feature__item-title {
+.feature-list__title {
   font-size: 20px;
   font-weight: 700;  
   margin-bottom: 10px;
 }
 
-.feature__item-text {
+.feature-list__text {
   line-height: 1.8;
   font-weight: 300;
   letter-spacing: 0.3px;
 }
 
-.feature__item-img {
+.feature-list__img {
   position: absolute;
   top: 0;
   left: 9%;
@@ -824,6 +833,9 @@ a {
 
 /* page shopping cart */
 @import 'page-cart';
+
+/* page catalog */
+@import 'page-catalog';
 
 // media
 @import 'media';
