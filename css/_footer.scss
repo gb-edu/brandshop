@@ -20,14 +20,18 @@
   padding-top: 10px;
 }
 
-.nav__block-header {
+.nav-block-header {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
 }
 
-.nav__block-list {
+.nav-block-list {
   margin-top: 20px;
+}
+
+.nav-block-li {
+  text-align: center;
 }
 
 .footer__nav-link {

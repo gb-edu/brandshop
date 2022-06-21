@@ -63,10 +63,10 @@
 }
 
 .filter-heading::after {
+  content: '\f0d7';
   position: absolute;
   right: 6px;
   font-family: "Font Awesome 5 Free"; 
-  content: '\f0d7';
   font-size: 16px;
 }
 
@@ -89,11 +89,6 @@
 .filter__list-item:hover {
   color: $color-pink;
 }
-
-
-
-
-
 
 .content-filter-top {
   display: flex;
@@ -137,26 +132,64 @@
   color: $gray-font-color;
 }
 
-//price filter
-
 .price-filter__values {
   display: flex;
   justify-content: space-between;
 }
 
-.price-filter__range {
+.range-slider {
   margin-top: 22px;
   margin-bottom: 20px;
   height: 6px;
-  background-color: $color-pink;
+  background-color: #f0f0f0;
   border-radius: 4px;
+  position: relative;
 }
 
+.range-slider .range-slider__progress {
+  position: absolute;
+  height: 6px;
+  left: 8%;
+  right: 63%;
+  border-radius: 4px;
+  background-color: $color-pink;
+}
 
+.range-input {
+  position: relative;
+}
 
+.range-min,
+.range-max {
+  position: absolute;
+  top: -2px;
+  height: 6px;
+  width: 100%;
+  pointer-events: none;
+  background: none;
+  appearance: none;
+}
 
+.range-min::-webkit-slider-thumb,
+.range-max::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  pointer-events: auto;
+  background-color: $color-pink;
+  appearance: none;
+  border-radius: 50%;
+}
 
-//price filter
+.range-min::-moz-range-thumb,
+.range-max::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  pointer-events: auto;
+  background-color: $color-pink;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 50%;
+}
 
 .content-filter-bottom {
   display: flex;
@@ -182,14 +215,30 @@
   font-family: 'Lato', sans-serif;
 }
 
-
-
 .pagination__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
   margin-bottom: 100px;
+}
+
+.pag__num {
+  display: flex;
+  border: 1px solid $border-color;
+  padding: 0 7px;
+}
+
+.pag__num-link {
+  color: $gray-font-color;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 11px 8px;
+  transition: color .1s linear;
+}
+
+.pag__num-link:hover {
+  color: $color-pink;
 }
 
 .button--pagination {
