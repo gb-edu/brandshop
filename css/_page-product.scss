@@ -1,3 +1,4 @@
+// page product
 .prod-category {
   background-color: #f8f3f4;
   border-bottom: 1px solid $border-color;
@@ -58,9 +59,14 @@
   right: 0;
 }
 
-.prod__image {
-  display: block;
+.prod__img-wrap {
+  max-width: 579px;
   margin: 0 auto;
+}
+
+.prod__image {
+  width: 100%;
+  display: block;
 }
 
 .prod__info {
@@ -116,11 +122,14 @@
 
 .prod__text {
   margin-top: 56px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 300;
 }
 
 .prod__details {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 25px;
   text-transform: uppercase;
@@ -153,7 +162,12 @@
 
 .form__options {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.form__group {
+  margin-top: 15px;
 }
 
 .form__label {
@@ -201,6 +215,6 @@
   font-size: 24px;
 }
 
-.subscribe-single__page {
+.subscribe--mt40 {
   margin-top: 40px;
 }

@@ -246,7 +246,9 @@
   </div>
   <main class="main">
     <div class="prod__slider">
-      <img class="prod__image" src="img/single_page/product-img.jpg" alt="image">
+      <div class="prod__img-wrap">
+        <img class="prod__image" src="img/single_page/product-img.jpg" alt="image">
+      </div>
       <div class="slider__arrow slider__arrow-left">
         <i class="fa-solid fa-angle-left"></i>
       </div>
@@ -273,7 +275,7 @@
           <div class="prod__buy">
             <form class="form">
               <fieldset class="form__options">
-                <div class="option__group">
+                <div class="form__group">
                   <label class="form__label" for="color">Choose color</label>
                   <select class="form__input" name="sel-color" id="">
                     <option value="1"><span class="color__tag">1</span>Red</option>
@@ -284,7 +286,7 @@
                     <option value="6">Pink</option>
                   </select>
                 </div>
-                <div class="option__group">
+                <div class="form__group">
                   <label class="form__label" for="size">Choose size</label>
                   <select class="form__input" name="sel-size" id="">
                     <option value="1">XS</option>
@@ -295,7 +297,7 @@
                     <option value="6">XXL</option>
                   </select>
                 </div>
-                <div class="option__group">
+                <div class="form__group">
                   <label class="form__label" for="quantity">Quantity</label>
                   <input class="form__input" id="quantity" type="text" placeholder="2">
                 </div>
@@ -311,72 +313,74 @@
     <section class="suggest">
       <div class="container">
         <h3 class="suggest__title">You may also like</h3>
-        <div class="card__list">
-          <div class="card__list-item">
-            <a class="item__link" href="#">
-              <img class="item__img" src="img/single_page/product-01.jpg" alt="image">
-              <div class="item__info">
-                <div class="item__desc">Mango People T-shirt</div>
-                <div class="item__price text-red">$52.00</div>
-              </div>
-            </a>
-            <div class="add__box">
-              <a class="add__btn" href="#">
-                <img class="cart__img" src="img/cart-add.svg" alt="cart">
-                <p class="add__desc">Add to Cart</p>
+        <div class="card-list">
+          <div class="card-list__content">
+            <div class="card-list__item">
+              <a class="item__link" href="product.html">
+                <img class="item__img" src="img/single_page/product-01.jpg" alt="image">
+                <div class="item__info">
+                  <div class="item__desc">Mango People T-shirt</div>
+                  <div class="item__price text-red">$52.00</div>
+                </div>
               </a>
+              <div class="add__box">
+                <a class="add__btn" href="#">
+                  <img class="cart__img" src="img/cart-add.svg" alt="cart">
+                  <p class="add__desc">Add to Cart</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="card__list-item">
-            <a class="item__link" href="#">
-              <img class="item__img" src="img/single_page/product-02.jpg" alt="image">
-              <div class="item__info">
-                <div class="item__desc">Mango People T-shirt</div>
-                <div class="item__price text-red">$52.00</div>
-              </div>
-            </a>
-            <div class="add__box">
-              <a class="add__btn" href="#">
-                <img class="cart__img" src="img/cart-add.svg" alt="cart">
-                <p class="add__desc">Add to Cart</p>
+            <div class="card-list__item">
+              <a class="item__link" href="product.html">
+                <img class="item__img" src="img/single_page/product-02.jpg" alt="image">
+                <div class="item__info">
+                  <div class="item__desc">Mango People T-shirt</div>
+                  <div class="item__price text-red">$52.00</div>
+                </div>
               </a>
+              <div class="add__box">
+                <a class="add__btn" href="#">
+                  <img class="cart__img" src="img/cart-add.svg" alt="cart">
+                  <p class="add__desc">Add to Cart</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="card__list-item">
-            <a class="item__link" href="#">
-              <img class="item__img" src="img/single_page/product-03.jpg" alt="image">
-              <div class="item__info">
-                <div class="item__desc">Mango People T-shirt</div>
-                <div class="item__price text-red">$52.00</div>
-              </div>
-            </a>
-            <div class="add__box">
-              <a class="add__btn" href="#">
-                <img class="cart__img" src="img/cart-add.svg" alt="cart">
-                <p class="add__desc">Add to Cart</p>
+            <div class="card-list__item">
+              <a class="item__link" href="product.html">
+                <img class="item__img" src="img/single_page/product-03.jpg" alt="image">
+                <div class="item__info">
+                  <div class="item__desc">Mango People T-shirt</div>
+                  <div class="item__price text-red">$52.00</div>
+                </div>
               </a>
+              <div class="add__box">
+                <a class="add__btn" href="#">
+                  <img class="cart__img" src="img/cart-add.svg" alt="cart">
+                  <p class="add__desc">Add to Cart</p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="card__list-item">
-            <a class="item__link" href="#">
-              <img class="item__img" src="img/single_page/product-04.jpg" alt="image">
-              <div class="item__info">
-                <div class="item__desc">Mango People T-shirt</div>
-                <div class="item__price text-red">$52.00</div>
-              </div>
-            </a>
-            <div class="add__box">
-              <a class="add__btn" href="#">
-                <img class="cart__img" src="img/cart-add.svg" alt="cart">
-                <p class="add__desc">Add to Cart</p>
+            <div class="card-list__item">
+              <a class="item__link" href="product.html">
+                <img class="item__img" src="img/single_page/product-04.jpg" alt="image">
+                <div class="item__info">
+                  <div class="item__desc">Mango People T-shirt</div>
+                  <div class="item__price text-red">$52.00</div>
+                </div>
               </a>
+              <div class="add__box">
+                <a class="add__btn" href="#">
+                  <img class="cart__img" src="img/cart-add.svg" alt="cart">
+                  <p class="add__desc">Add to Cart</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <section class="subscribe subscribe-single__page">
+  <section class="subscribe subscribe--mt40">
     <div class="subscribe__left">
       <div class="subscribe__slider">
         <div class="slider__item">
@@ -414,7 +418,7 @@
       <div class="footer__top">
         <div class="footer__top-left">
           <div class="brand">
-            <a class="brand__logo" href="index.html">
+            <a class="brand__logo" href="index.html"> 
               <img class="brand__logo-img" src="img/logo.png" alt="logo">
               <span class="brand__logo-title">Bran<span class="brand__logo-span">d</span></span></a>
           </div>
@@ -430,37 +434,37 @@
           </div>
         </div>
         <nav class="footer__top-right">
-          <div class="nav__block">
-            <h3 class="nav__block-header text-red">Company</h3>
-            <ul class="nav__block-list">
-              <li><a class="footer__nav-link" href="#">Home</a></li>
-              <li><a class="footer__nav-link" href="#">Shop</a></li>
-              <li><a class="footer__nav-link" href="#">About</a></li>
-              <li><a class="footer__nav-link" href="#">How It Works</a></li>
-              <li><a class="footer__nav-link" href="#">Contact</a></li>
+          <div class="nav-block">
+            <h3 class="nav-block-header text-red">Company</h3>
+            <ul class="nav-block-list">
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Home</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Shop</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">About</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">How It Works</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="nav__block">
-            <h3 class="nav__block-header text-red">Information</h3>
-            <ul class="nav__block-list">
-              <li><a class="footer__nav-link" href="#">Terms & Condition</a></li>
-              <li><a class="footer__nav-link" href="#">Privacy Policy</a></li>
-              <li><a class="footer__nav-link" href="#">How to Buy</a></li>
-              <li><a class="footer__nav-link" href="#">How to Sell</a></li>
-              <li><a class="footer__nav-link" href="#">Promotion</a></li>
+          <div class="nav-block">
+            <h3 class="nav-block-header text-red">Information</h3>
+            <ul class="nav-block-list">
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Terms & Condition</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Privacy Policy</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">How to Buy</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">How to Sell</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Promotion</a></li>
             </ul>
           </div>
-          <div class="nav__block">
-            <h3 class="nav__block-header text-red">Shop category</h3>
-            <ul class="nav__block-list">
-              <li><a class="footer__nav-link" href="#">Men</a></li>
-              <li><a class="footer__nav-link" href="#">Women</a></li>
-              <li><a class="footer__nav-link" href="#">Child</a></li>
-              <li><a class="footer__nav-link" href="#">Apparel</a></li>
-              <li><a class="footer__nav-link" href="#">Bowse All</a></li>
+          <div class="nav-block">
+            <h3 class="nav-block-header text-red">Shop category</h3>
+            <ul class="nav-block-list">
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Men</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Women</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Child</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Apparel</a></li>
+              <li class="nav-block-li"><a class="footer__nav-link" href="#">Bowse All</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </div>
     <div class="footer__bottom">

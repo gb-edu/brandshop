@@ -21,18 +21,22 @@
 }
 
 .address__form {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 30px;
   padding-bottom: 50px;
   padding-top: 8px;
-  display: flex;
   justify-content: space-between;
 }
 
 .address__left,
 .address__right {
-  width: 570px;
+  flex-basis: 48%;
 }
 
+.address__left {
+  margin-right: 15px;
+}
 .checkout__heading {
   margin-top: 28px;
   font-weight: 400;
@@ -69,7 +73,10 @@
 
 .input--checkout-email,
 .input--checkout-password {
-  min-width: 390px;
+  
+  max-width: 390px;
+  width: 100%;
+  min-width: 300px;
   margin-top: 10px;
   margin-bottom: 13px;
 }
